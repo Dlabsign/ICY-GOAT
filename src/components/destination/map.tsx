@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { MapModel, svgContent } from "database/db_home";
 import "../../app/globals.css";
 
-// Define the types for your props
 interface Destination {
   name: string;
   subtitle: string;
@@ -13,13 +12,13 @@ interface Destination {
 }
 
 interface Negara {
-  id: string;
-  negara: string;
+  nama: string; // Ensure this matches the property names in `DestinationPage`
+  kode: string;
   destinations: Destination[];
 }
 
 interface WorldMapSectionProps {
-  onNegaraSelect: (country: Negara) => void;
+  onNegaraSelect: (country: Negara) => void; // Make sure this matches the type used in `DestinationPage`
 }
 
 export default function WorldMapSection({

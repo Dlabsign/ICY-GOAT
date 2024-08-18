@@ -18,7 +18,7 @@ interface Destination {
 }
 
 interface Negara {
-  nama: string;
+  nama: string; // Ensure this matches the property names in `WorldMapSection`
   kode: string;
   destinations: Destination[];
 }

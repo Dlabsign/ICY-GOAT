@@ -7,7 +7,6 @@ import "../../app/globals.css";
 interface Negara {
   nama: string;
   kode: string;
-  destinations: Destination[];
 }
 
 interface WorldMapSectionProps {

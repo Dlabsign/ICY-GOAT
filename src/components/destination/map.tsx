@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { MapModel, svgContent } from "database/db_home";
 import "../../app/globals.css";
 
-const WorldMapSection = ({ onNegaraSelect }) => {
+export default function WorldMapSection({ onNegaraSelect }) {
   const [selectedCountry, setSelectedCountry] = useState(null);
 
   useEffect(() => {
@@ -60,6 +60,4 @@ const WorldMapSection = ({ onNegaraSelect }) => {
       </div>
     </div>
   );
-};
-
-export default WorldMapSection;
+}

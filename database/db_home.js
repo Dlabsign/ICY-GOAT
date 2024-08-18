@@ -3,54 +3,48 @@ export const dataHoverSection = [
     title: "Destinasi Eksklusif",
     description:
       "Jelajahi destinasi eksklusif yang hanya kami tawarkan kepada Anda.",
-    bgImage:
-      "https://images.unsplash.com/photo-1722172118908-1a97c312ce8c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8", // Replace with your image path
+    bgImage: "/images/home/hover1.jpg", 
   },
   {
     title: "Paket Hemat",
     description: "Dapatkan paket liburan hemat dengan harga terjangkau.",
-    bgImage:
-      "https://images.unsplash.com/photo-1510797215324-95aa89f43c33?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bgImage: "/images/home/hover2.jpg", 
+
   },
   {
     title: "Pelayanan Terbaik",
     description:
       "Kami memberikan pelayanan terbaik untuk memastikan liburan Anda berjalan lancar.",
-    bgImage:
-      "https://images.unsplash.com/photo-1722172118908-1a97c312ce8c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8", // Replace with your image path
+      bgImage: "/images/home/hover3.jpg", 
+
   },
 ];
 
 export const dataMovingBanner = [
   {
-    headline: "1",
+    headline: "Alaska",
     description: "(Min. 2 persons - 500k/person)",
-    imageUrl:
-      "https://images.unsplash.com/photo-1721633616323-e0ea74a488e0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/images/home/moving/1.jpg",
   },
   {
-    headline: "2",
+    headline: "Pantai Selatan",
     description: "(Min. 2 persons - 500k/person)",
-    imageUrl:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/images/home/moving/2.jpg",
   },
   {
-    headline: "3",
+    headline: "Hutan Bigfoot",
     description: "(Min. 2 persons - 500k/person)",
-    imageUrl:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/images/home/moving/3.jpg",
   },
   {
-    headline: "4",
+    headline: "Rome",
     description: "(Min. 2 persons - 500k/person)",
-    imageUrl:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/images/home/moving/4.jpg",
   },
   {
-    headline: "5",
+    headline: "Bali",
     description: "(Min. 2 persons - 500k/person)",
-    imageUrl:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/images/home/moving/5.jpg",
   },
 ];
 
@@ -141,7 +135,7 @@ export const MapModel = {
       videoProfile: "/video/negara/id.mp4",
       tentang: [
         {
-         image: "/images/destinations/id/id.jpg",
+          image: "/images/destinations/id/id.jpg",
           title: "Keindahan dan keragaman yang tak terlupakan",
           deskripsi:
             "Indonesia, negara kepulauan terbesar di dunia, menawarkan beragam destinasi wisata yang memukau, mulai dari pantai-pantai yang eksotis hingga keajaiban budaya dan sejarah. Setiap sudut Indonesia menyimpan keindahan dan pesona tersendiri, menjadikannya destinasi yang sempurna untuk pasangan suami istri yang mencari petualangan dan relaksasi.",

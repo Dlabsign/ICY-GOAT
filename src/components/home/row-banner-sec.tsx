@@ -79,7 +79,7 @@ export default function RowBanner() {
               }}
               transition={{ duration: 1 }}
               className="transition ease-in-out shadow-lg w-full sm:w-1/2 lg:w-52 h-52 sm:h-72 lg:h-[400px] hover:scale-110 object-cover"
-              src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/images/home/row-banner1.jpg"
               alt="Liburan 1"
             />
             <motion.img
@@ -92,7 +92,7 @@ export default function RowBanner() {
               }}
               transition={{ duration: 1 }}
               className="transition ease-in-out shadow-lg w-full sm:w-1/2 lg:w-52 h-52 sm:h-72 lg:h-[400px] hover:scale-110 object-cover"
-              src="https://images.unsplash.com/photo-1520277872024-58b40679ddb4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/images/home/row-banner2.jpg"
               alt="Liburan 2"
             />
           </motion.div>

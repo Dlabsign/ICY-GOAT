@@ -1,5 +1,4 @@
 "use client"; // Tambahkan ini di bagian paling atas
-import { HomeBannerSection } from "database/db_home";
 import {
   useViewportScroll,
   motion,

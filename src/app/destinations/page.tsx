@@ -10,9 +10,17 @@ import AboutDestination from "@/components/destination/row-about";
 import PopularSection from "@/components/destination/popular";
 import { useState } from "react";
 
+interface Destination {
+  name: string;
+  subtitle: string;
+  description: string;
+  image: string;
+}
+
 interface Negara {
   nama: string;
   kode: string;
+  destinations: Destination[]; // Tambahkan ini
 }
 
 export default function DestinationPage() {
@@ -29,7 +37,7 @@ export default function DestinationPage() {
       <WorldMapSection onNegaraSelect={handleNegaraChange} />
       <VideoSection negaraTerpilih={negaraTerpilih} />
       <AboutDestination negaraTerpilih={negaraTerpilih} />
-      <PopularSection negaraTerpilih={negaraTerpilih} />
+      <PopularSection negaraTerpilih={negaraTerpilih ?? undefined} />
       <NewsLetter />
       <BottomBar />
     </div>

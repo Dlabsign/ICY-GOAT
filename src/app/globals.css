@@ -2,32 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "Recline";
+  src: url("../../public/font/recline.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@font-face {
+  font-family: "Gotham";
+  src: url("../../public/font/GOTHAMBOOK.TTF");
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar {
+  height: 0;
+}
+
+.home-hero-section {
+  background-image: url("../../public/images/home/hero-img.jpg");
+  background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh elemen */
+  background-position: center center; /* Memusatkan gambar */
+  background-attachment: fixed; /* Mengatur gambar agar tetap saat menggulir */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  max-height: 100%;
+  animation: zoomOut 20s linear infinite; /* Terapkan animasi zoomOut dengan durasi 20 detik */
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.home-hero-section {
+  position: relative;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.home-hero-section {
+  position: relative;
+}
+
+.hover-image {
+  position: absolute;
+  width: 20%; /* Adjust size as needed */
+  pointer-events: none; /* Ensure the image does not interfere with mouse events */
+  transform: translate(-50%, -50%);
+  animation: rotate 8s linear infinite; /* Rotating animation */
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 2s ease-in-out; /* Smooth opacity and position transition */
+}
+
+.hover-image.visible {
+  opacity: 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+.worldmap .negara {
+  fill: #98b7c5;
+  stroke: #423f3f;
+  transition: fill 0.2s ease;
+}
+
+.worldmap .negara:hover {
+  fill: #b3bfc4; /* Change color on hover */
+  cursor: pointer;
+  stroke: #ffffff;
+  filter: drop-shadow(
+    5px 10px 5px #888888
+  ); /* Apply a shadow using drop-shadow */
 }

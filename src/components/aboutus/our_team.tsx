@@ -13,6 +13,9 @@ import { OurTeam } from "database/db_home";
 export default function SwiperComponent() {
   return (
     <div className="w-full mb-8 sm:mb-16 px-5 sm:px-36">
+      <div className="mb-5 text-neutral-700 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light font-['Recline'] leading-tight lg:leading-[72.19px] text-center">
+        Our Team
+      </div>
       <Swiper
         slidesPerView={1}
         spaceBetween={20}
@@ -22,7 +25,7 @@ export default function SwiperComponent() {
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 30,
           },
         }}
@@ -33,7 +36,10 @@ export default function SwiperComponent() {
         className="pb-14"
       >
         {OurTeam.map((src, index) => (
-          <SwiperSlide key={index} className="flex flex-col items-center">
+          <SwiperSlide
+            key={index}
+            className="flex flex-col items-center justify-center"
+          >
             <img
               className="w-full h-[350px] object-cover rounded"
               src={src.imageUrl}

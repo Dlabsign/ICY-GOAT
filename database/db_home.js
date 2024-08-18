@@ -111,80 +111,78 @@ export const AboutUs = [
 export const OurTeam = [
   {
     imageUrl: "images/about/people1.jpg",
-    nama: "User 1",
-  },
-  {
-    imageUrl: "images/about/people1.jpg",
-    nama: "User 1",
-  },
-  {
-    imageUrl: "images/about/people1.jpg",
-    nama: "User 1",
-  },
-  {
-    imageUrl: "images/about/people1.jpg",
-    nama: "User 1",
+    nama: "Daniel Kurnia - Only One",
   },
 ];
 
 export const MapModel = {
-  Asia: [
-    {
-      id: "id",
-      negara: "Indonesia",
-      videoProfile: "/video/negara/id.mp4",
-      tentang: [
-        {
-          image: "/images/destinations/id/id.jpg",
-          title: "Keindahan dan keragaman yang tak terlupakan",
-          deskripsi:
-            "Indonesia, negara kepulauan terbesar di dunia, menawarkan beragam destinasi wisata yang memukau, mulai dari pantai-pantai yang eksotis hingga keajaiban budaya dan sejarah. Setiap sudut Indonesia menyimpan keindahan dan pesona tersendiri, menjadikannya destinasi yang sempurna untuk pasangan suami istri yang mencari petualangan dan relaksasi.",
-        },
-      ],
-      destinations: [
-        {
-          name: "Raja Ampat",
-          subtitle: "Surga Bawa Laut",
-          description:
-            "Raja Ampat, surga bagi penyelam dan pecinta alam bawah laut, menawarkan keanekaragaman hayati laut yang luar biasa. Snorkeling dan menyelam di perairan jernihnya akan memperlihatkan terumbu karang yang spektakuler dan berbagai jenis ikan yang berwarna-warni. Nikmati keindahan alam yang murni dan pengalaman yang tak terlupakan di Raja Ampat.",
-          image: "/images/destinations/id/raja_ampat.jpg",
-          region: "Indonesia",
-        },
-        {
-          name: "Lombok",
-          subtitle: "Tanah Sela",
-          description:
-            "Lombok menawarkan keindahan alam yang masih alami dan tenang. Nikmati pantai-pantai yang belum terjamah seperti Pantai Kuta Lombok dan Pantai Tanjung Aan. Daki Gunung Rinjani, gunung berapi tertinggi kedua di Indonesia, dan nikmati pemandangan spektakuler dari puncaknya. Lombok adalah tempat yang sempurna untuk petualangan dan ketenangan.",
-          image: "/images/destinations/id/lombok.jpg",
-          region: "Indonesia",
-        },
-        // Tambahkan destinasi lain di sini jika ada
-      ],
-    },
-    {
-      id: "my",
-      negara: "Malaysia",
-      videoProfile: "/video/negara/my.mp4",
-      tentang: [
-        {
-          image: "/images/destinations/my/my.jpg",
-          title: "Ini Malaysia",
-          deskripsi: "Tentang Malaysia",
-        },
-      ],
-      destinations: [
-        {
-          name: "Kuala Lumpur",
-          subtitle: "Ibu Kota",
-          description:
-            "capital of Malaysia. The city is located in west-central Peninsular (West) Malaysia, midway along the west coast tin and rubber belt and about 25 miles (40 km) east of its ocean port, Port Kelang, on the Strait of Malacca",
-          image: "/images/destinations/my/kuala.jpg",
-          region: "Malaysia",
-        },
-      ],
-    },
-  ],
-};
+   Asia: [
+     {
+       id: "id",
+       negara: "Indonesia",
+       videoProfile: "/video/negara/id.mp4",
+       tentang: [
+         {
+           image: "/images/destinations/id/id.jpg",
+           title: "Unforgettable beauty and diversity",
+           deskripsi:
+             "Indonesia, the world's largest archipelago, offers a variety of stunning tourist destinations, from exotic beaches to cultural and historical wonders. Every corner of Indonesia holds its own beauty and charm, making it the perfect destination for married couples seeking adventure and relaxation.",
+         },
+       ],
+       destinations: [
+         {
+           name: "Raja Ampat",
+           subtitle: "Underwater Paradise",
+           description:
+             "Raja Ampat, a paradise for divers and marine life enthusiasts, offers incredible marine biodiversity. Snorkeling and diving in its clear waters reveal spectacular coral reefs and colorful fish. Enjoy the pristine natural beauty and unforgettable experiences in Raja Ampat.",
+           image: "/images/destinations/id/raja_ampat.jpg",
+           region: "Indonesia",
+         },
+         {
+           name: "Lombok",
+           subtitle: "The Land Between",
+           description:
+             "Lombok offers unspoiled and tranquil natural beauty. Enjoy untouched beaches like Kuta Lombok Beach and Tanjung Aan Beach. Climb Mount Rinjani, the second-highest volcano in Indonesia, and enjoy spectacular views from its summit. Lombok is the perfect place for adventure and serenity.",
+           image: "/images/destinations/id/lombok.jpg",
+           region: "Indonesia",
+         },
+         // Add other destinations here if any
+       ],
+     },
+     {
+       id: "my",
+       negara: "Malaysia",
+       videoProfile: "/video/negara/my.mp4",
+       tentang: [
+         {
+           image: "/images/destinations/my/my.jpg",
+           title: "The Land of Neighboring Countries",
+           deskripsi:
+             "Malaysia is a Southeast Asian country known for its cultural diversity, delicious food, and stunning landscapes. The country consists of two main regions, Peninsular Malaysia and East Malaysia located on the island of Borneo. The capital city is Kuala Lumpur, which is the economic and cultural hub. Malaysia is also known for its twin towers, the Petronas Twin Towers, as well as beautiful beaches like those in Langkawi and Tioman Island.",
+         },
+       ],
+       destinations: [
+         {
+           name: "Kuala Lumpur",
+           subtitle: "Iconic Landmarks",
+           description:
+             "The capital of Malaysia. The city is located in west-central Peninsular Malaysia, midway along the west coast tin and rubber belt and about 25 miles (40 km) east of its ocean port, Port Kelang, on the Strait of Malacca.",
+           image: "/images/destinations/my/kuala.jpg",
+           region: "Malaysia",
+         },
+         {
+           name: "Lego Land Malaysia",
+           subtitle: "Theme Park",
+           description:
+             "Themed rooms in a colorful resort with 2 restaurants, an outdoor pool & a children's play area.",
+           image: "/images/destinations/my/legoland.jpg",
+           region: "Malaysia",
+         },
+       ],
+     },
+   ],
+ };
+ 
 
 export const svgContent = `
   <svg

@@ -23,10 +23,10 @@ export default function PopularSection({
 
   return (
     <div className="h-auto px-4 py-14 flex flex-col justify-center items-center gap-14">
-      <div className="w-full flex justify-between items-center px-24">
+      <div className="w-full flex justify-between items-center px-5 sm:px-24">
         <img
           src="/images/destinations/arrow.png"
-          className="w-[30px] opacity-65 rotate-180"
+          className="w-[30px] opacity-65 rotate-180 sm:block hidden"
           alt=""
         />
         <div className="text-center">
@@ -39,7 +39,7 @@ export default function PopularSection({
         </div>
         <img
           src="/images/destinations/arrow.png"
-          className="w-[30px] opacity-65"
+          className="w-[30px] opacity-65 sm:block hidden"
           alt=""
         />
       </div>
@@ -96,7 +96,7 @@ const DescriptionWithReadMore: React.FC<{ text: string }> = ({ text }) => {
         onClick={() => setIsReadMore(!isReadMore)}
         className="text-gray-800 font-black cursor-pointer mt-5 flex flex-col"
       >
-        {isReadMore ? "Selengkapnya" : "Sembunyikan"}
+        {isReadMore ? "Read More" : "Hide"}
       </span>
     </p>
   );

@@ -11,12 +11,12 @@ export default function NewsLetter() {
         autoPlay
         muted
       />
-      <div className="relative  flex flex-col justify-center items-center text-center gap-4 lg:gap-6 p-7 sm:p-40 py-20 sm:py-36 ">
-        <div className="text-neutral-50 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light font-['Recline'] leading-tight lg:leading-[72.19px]">
-          Bergabung dengan newsletter kami
+      <div className="relative flex flex-col justify-center items-center text-center gap-0 px-9 sm:px-24 py-14 sm:py-36 ">
+        <div className="text-neutral-50 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light font-['Recline'] leading-tight sm:leading-[72.19px]">
+          Join with our newsletter
         </div>
         <motion.div
-          className="text-gray-200 text-[16px] font-normal font-gotham tracking-wider"
+          className="text-gray-200 sm:text-[16px] text-[12px] font-normal font-gotham tracking-wider"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: "easeOut", delay: 0.8 }}

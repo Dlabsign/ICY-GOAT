@@ -1,24 +1,10 @@
 "use client"; // Ensure this is at the very top
 
-import { MapModel } from "database/db_home";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css"; // Import Swiper styles
 
-interface Destination {
-  image: string;
-  name: string;
-  subtitle: string;
-  description: string;
-}
-
-interface PopularSectionProps {
-  negaraTerpilih?: {
-    destinations: Destination[];
-  };
-}
-
-const PopularSection: React.FC<PopularSectionProps> = ({ negaraTerpilih }) => {
+export default function PopularSection({ negaraTerpilih }) {
   const destinations = negaraTerpilih?.destinations || [];
 
   return (
@@ -84,9 +70,7 @@ const PopularSection: React.FC<PopularSectionProps> = ({ negaraTerpilih }) => {
       </Swiper>
     </div>
   );
-};
-
-export default PopularSection;
+}
 
 const DescriptionWithReadMore: React.FC<{ text: string }> = ({ text }) => {
   const [isReadMore, setIsReadMore] = useState(true);

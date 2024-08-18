@@ -30,7 +30,6 @@ export default function DestinationPage() {
       <VideoSection negaraTerpilih={negaraTerpilih} />
       <AboutDestination negaraTerpilih={negaraTerpilih} />
       <PopularSection negaraTerpilih={negaraTerpilih} />
-
       <NewsLetter />
       <BottomBar />
     </div>

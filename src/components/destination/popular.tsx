@@ -3,8 +3,22 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css"; // Import Swiper styles
+interface Destination {
+  name: string;
+  subtitle: string;
+  description: string;
+  image: string;
+}
 
-export default function PopularSection({ negaraTerpilih }) {
+interface PopularSectionProps {
+  negaraTerpilih?: {
+    destinations: Destination[];
+  };
+}
+
+export default function PopularSection({
+  negaraTerpilih,
+}: PopularSectionProps) {
   const destinations = negaraTerpilih?.destinations || [];
 
   return (

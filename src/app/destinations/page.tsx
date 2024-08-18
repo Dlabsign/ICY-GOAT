@@ -9,19 +9,7 @@ import VideoSection from "@/components/destination/video_section";
 import AboutDestination from "@/components/destination/row-about";
 import PopularSection from "@/components/destination/popular";
 import { useState } from "react";
-
-interface Destination {
-  name: string;
-  subtitle: string;
-  description: string;
-  image: string;
-}
-
-interface Negara {
-  nama: string; // Ensure this matches the property names in `WorldMapSection`
-  kode: string;
-  destinations: Destination[];
-}
+import { Negara } from "src/types/interfaces"; // Import interface from shared location
 
 export default function DestinationPage() {
   const [negaraTerpilih, setNegaraTerpilih] = useState<Negara | null>(null);

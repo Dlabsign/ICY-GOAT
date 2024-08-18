@@ -2,31 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { MapModel, svgContent } from "database/db_home";
+import { Negara } from "src/types/interfaces"; // Import interface from shared location
 import "../../app/globals.css";
-
-// Pastikan properti Negara sesuai dengan data dalam MapModel
-interface Destination {
-  name: string;
-  subtitle: string;
-  description: string;
-  image: string;
-}
-
-interface Negara {
-  id: string; // Tambahkan id, kode, dan nama negara sesuai dengan MapModel
-  negara: string; // Pastikan ini sesuai dengan MapModel
-  videoProfile: string;
-  tentang: {
-    image: string;
-    title: string;
-    deskripsi: string;
-  }[];
-  destinations: Destination[];
-}
-
-interface WorldMapSectionProps {
-  onNegaraSelect: (country: Negara) => void; // Fungsi menerima Negara sebagai argumen
-}
 
 export default function WorldMapSection({
   onNegaraSelect,

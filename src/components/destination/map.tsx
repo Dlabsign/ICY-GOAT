@@ -4,19 +4,26 @@ import { useState, useEffect } from "react";
 import { MapModel, svgContent } from "database/db_home";
 import "../../app/globals.css";
 
-export default function WorldMapSection({ onNegaraSelect }) {
-  const [selectedCountry, setSelectedCountry] = useState(null);
+interface Negara {
+  id: string;
+  negara: string;
+  kode: string;
+}
+
+interface WorldMapSectionProps {
+  onNegaraSelect: (country: Negara) => void;
+}
+
+export default function WorldMapSection({ onNegaraSelect }: WorldMapSectionProps) {
+  const [selectedCountry, setSelectedCountry] = useState<Negara | null>(null);
 
   useEffect(() => {
     if (selectedCountry) {
-      // Perform actions when the selected country changes
-      if (typeof onNegaraSelect === "function") {
-        onNegaraSelect(selectedCountry);
-      }
+      onNegaraSelect(selectedCountry);
     }
   }, [selectedCountry, onNegaraSelect]);
 
-  const handleNegaraClick = (country) => {
+  const handleNegaraClick = (country: Negara) => {
     setSelectedCountry(country);
   };
 

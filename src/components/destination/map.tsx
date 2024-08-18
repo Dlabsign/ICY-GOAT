@@ -58,17 +58,19 @@ export default function WorldMapSection({
                 {regionCode}
               </div>
               <div className="flex flex-col justify-start items-start">
-                {MapModel[regionCode].map((country) => (
-                  <div
-                    key={country.id}
-                    className="text-[#352e2e] text-sm font-medium font-['GothamBook'] leading-[30px] cursor-pointer"
-                    onClick={() => handleNegaraClick(country)}
-                  >
-                    <div className="text-[#352e2e] text-lg sm:text-xl font-medium font-['Recline'] hover:text-[#b8b3b3] duration-150 leading-tight">
-                      {country.negara}
+                {(MapModel[regionCode as keyof typeof MapModel] || []).map(
+                  (country) => (
+                    <div
+                      key={country.id}
+                      className="text-[#352e2e] text-sm font-medium font-['GothamBook'] leading-[30px] cursor-pointer"
+                      onClick={() => handleNegaraClick(country)}
+                    >
+                      <div className="text-[#352e2e] text-lg sm:text-xl font-medium font-['Recline'] hover:text-[#b8b3b3] duration-150 leading-tight">
+                        {country.negara}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  )
+                )}
               </div>
             </div>
           </div>

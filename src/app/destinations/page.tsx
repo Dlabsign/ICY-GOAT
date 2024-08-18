@@ -20,7 +20,7 @@ interface Destination {
 interface Negara {
   nama: string;
   kode: string;
-  destinations: Destination[]; // Tambahkan ini
+  destinations: Destination[];
 }
 
 export default function DestinationPage() {

@@ -5,9 +5,9 @@ import { MapModel, svgContent } from "database/db_home";
 import "../../app/globals.css";
 
 interface Negara {
-  id: string;
-  negara: string;
+  nama: string;
   kode: string;
+  destinations: Destination[];
 }
 
 interface WorldMapSectionProps {
@@ -51,12 +51,12 @@ export default function WorldMapSection({ onNegaraSelect }: WorldMapSectionProps
               <div className="flex flex-col justify-start items-start">
                 {MapModel[continent].map((country) => (
                   <div
-                    key={country.id} // Use `country.id` as it should be unique
+                    key={country.id}
                     className="text-[#352e2e] text-sm font-medium font-['GothamBook'] leading-[30px] cursor-pointer"
                     onClick={() => handleNegaraClick(country)}
                   >
                     <div className="text-[#352e2e] text-lg sm:text-xl font-medium font-['Recline'] hover:text-[#b8b3b3] duration-150 leading-tight">
-                      {country.negara}
+                      {country.nama}
                     </div>
                   </div>
                 ))}

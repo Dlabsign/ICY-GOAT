@@ -10,10 +10,15 @@ import AboutDestination from "@/components/destination/row-about";
 import PopularSection from "@/components/destination/popular";
 import { useState } from "react";
 
-export default function DestinationPage() {
-  const [negaraTerpilih, setNegaraTerpilih] = useState(null);
+interface Negara {
+  nama: string;
+  kode: string;
+}
 
-  const handleNegaraChange = (negara) => {
+export default function DestinationPage() {
+  const [negaraTerpilih, setNegaraTerpilih] = useState<Negara | null>(null);
+
+  const handleNegaraChange = (negara: Negara) => {
     setNegaraTerpilih(negara);
   };
 

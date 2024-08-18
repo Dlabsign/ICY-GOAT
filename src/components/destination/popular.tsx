@@ -62,7 +62,7 @@ const PopularSection: React.FC<PopularSectionProps> = ({ negaraTerpilih }) => {
       >
         {destinations.map((dest, index) => (
           <SwiperSlide key={index}>
-            <div className="border border-black p-10 z-0 sm:p-5">
+            <div className=" p-10 z-0 sm:p-5">
               <img
                 className="rotate-[4.35deg] hover:rotate-0 duration-200 w-full h-[350px] object-cover mb-4"
                 src={dest.image}

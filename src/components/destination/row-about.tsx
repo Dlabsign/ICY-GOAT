@@ -14,8 +14,8 @@ export default function AboutDestination({ negaraTerpilih }) {
         >
           <img
             className="w-[300px] h-[350px] bg-cover"
-            src="https://via.placeholder.com/560x443"
-            alt={dest.title}
+            src={dest.image}
+            alt={dest.image}
           />
           <div className="flex flex-col justify-center items-start gap-3 mt-16 sm:mt-0">
             <div className="text-black text-base font-light font-['Recline'] leading-none">

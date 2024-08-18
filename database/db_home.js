@@ -141,6 +141,7 @@ export const MapModel = {
       videoProfile: "/video/negara/id.mp4",
       tentang: [
         {
+         image: "/images/destinations/id/id.jpg",
           title: "Keindahan dan keragaman yang tak terlupakan",
           deskripsi:
             "Indonesia, negara kepulauan terbesar di dunia, menawarkan beragam destinasi wisata yang memukau, mulai dari pantai-pantai yang eksotis hingga keajaiban budaya dan sejarah. Setiap sudut Indonesia menyimpan keindahan dan pesona tersendiri, menjadikannya destinasi yang sempurna untuk pasangan suami istri yang mencari petualangan dan relaksasi.",
@@ -157,10 +158,10 @@ export const MapModel = {
         },
         {
           name: "Lombok",
-          subtitle: "Pulau Dewata",
+          subtitle: "Tanah Sela",
           description:
             "Lombok menawarkan keindahan alam yang masih alami dan tenang. Nikmati pantai-pantai yang belum terjamah seperti Pantai Kuta Lombok dan Pantai Tanjung Aan. Daki Gunung Rinjani, gunung berapi tertinggi kedua di Indonesia, dan nikmati pemandangan spektakuler dari puncaknya. Lombok adalah tempat yang sempurna untuk petualangan dan ketenangan.",
-          image: "https://via.placeholder.com/430x443",
+          image: "/images/destinations/id/lombok.jpg",
           region: "Indonesia",
         },
         // Tambahkan destinasi lain di sini jika ada
@@ -171,27 +172,19 @@ export const MapModel = {
       negara: "Malaysia",
       videoProfile: "/video/negara/my.mp4",
       tentang: [
-         {
-           title: "Ini Malaysia",
-           deskripsi:
-             "Tentang Malaysia",
-         },
-       ],
+        {
+          image: "/images/destinations/my/my.jpg",
+          title: "Ini Malaysia",
+          deskripsi: "Tentang Malaysia",
+        },
+      ],
       destinations: [
         {
           name: "Kuala Lumpur",
-          subtitle: "Pulau Dewata",
+          subtitle: "Ibu Kota",
           description:
-            "Bali, juga dikenal sebagai Pulau Dewata, adalah surga tropis...",
-          image: "https://via.placeholder.com/430x443",
-          region: "Malaysia",
-        },
-        {
-          name: "Kuala Lumpur2",
-          subtitle: "Pulau Dewata",
-          description:
-            "Bali, juga dikenal sebagai Pulau Dewata, adalah surga tropis...",
-          image: "https://via.placeholder.com/430x443",
+            "capital of Malaysia. The city is located in west-central Peninsular (West) Malaysia, midway along the west coast tin and rubber belt and about 25 miles (40 km) east of its ocean port, Port Kelang, on the Strait of Malacca",
+          image: "/images/destinations/my/kuala.jpg",
           region: "Malaysia",
         },
       ],

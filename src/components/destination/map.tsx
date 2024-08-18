@@ -2,8 +2,12 @@
 
 import { useState, useEffect } from "react";
 import { MapModel, svgContent } from "database/db_home";
-import { Negara } from "src/types/interfaces"; // Import interface from shared location
+import { Negara } from "src/types/interfaces"; // Pastikan Anda mengimpor Negara dari tempat yang benar
 import "../../app/globals.css";
+
+interface WorldMapSectionProps {
+  onNegaraSelect: (country: Negara) => void;
+}
 
 export default function WorldMapSection({
   onNegaraSelect,

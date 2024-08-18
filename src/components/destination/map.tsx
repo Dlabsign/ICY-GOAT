@@ -4,18 +4,36 @@ import { useState, useEffect } from "react";
 import { MapModel, svgContent } from "database/db_home";
 import "../../app/globals.css";
 
-export default function WorldMapSection({ onNegaraSelect }) {
-  const [selectedCountry, setSelectedCountry] = useState(null);
+// Define the types for your props
+interface Destination {
+  name: string;
+  subtitle: string;
+  description: string;
+  image: string;
+}
+
+interface Negara {
+  id: string;
+  negara: string;
+  destinations: Destination[];
+}
+
+interface WorldMapSectionProps {
+  onNegaraSelect: (country: Negara) => void;
+}
+
+export default function WorldMapSection({
+  onNegaraSelect,
+}: WorldMapSectionProps) {
+  const [selectedCountry, setSelectedCountry] = useState<Negara | null>(null);
 
   useEffect(() => {
     if (selectedCountry) {
-      if (typeof onNegaraSelect === "function") {
-        onNegaraSelect(selectedCountry);
-      }
+      onNegaraSelect(selectedCountry);
     }
   }, [selectedCountry, onNegaraSelect]);
 
-  const handleNegaraClick = (country) => {
+  const handleNegaraClick = (country: Negara) => {
     setSelectedCountry(country);
   };
 
@@ -38,12 +56,12 @@ export default function WorldMapSection({ onNegaraSelect }) {
           >
             <div className="pl-4 sm:pl-6 md:pl-[25px] border-l border-[#546e7a] flex flex-col justify-start items-start">
               <div className="text-[#352e2e] text-lg sm:text-2xl md:text-[32px] font-light font-['Recline'] leading-tight sm:leading-[36px] md:leading-[48.13px]">
-                {regionCode} {/* Ganti dengan kode atau nama yang sesuai */}
+                {regionCode}
               </div>
               <div className="flex flex-col justify-start items-start">
                 {MapModel[regionCode].map((country) => (
                   <div
-                    key={country.id} // Gunakan `country.id` yang unik
+                    key={country.id}
                     className="text-[#352e2e] text-sm font-medium font-['GothamBook'] leading-[30px] cursor-pointer"
                     onClick={() => handleNegaraClick(country)}
                   >

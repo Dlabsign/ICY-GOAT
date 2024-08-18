@@ -17,3 +17,9 @@ export interface Negara {
   }[];
   destinations: Destination[];
 }
+
+export interface Tentang {
+  image: string;
+  title: string;
+  deskripsi: string;
+}

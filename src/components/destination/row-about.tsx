@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 export default function AboutDestination({ negaraTerpilih }) {
   if (!negaraTerpilih || !negaraTerpilih.tentang) {
     return null; // Render nothing if no country is selected

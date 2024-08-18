@@ -1,12 +1,20 @@
-"use client"; // Ensure this directive is at the top of the file
+"use client";
 
 import { useState, useEffect } from "react";
 import { MapModel, svgContent } from "database/db_home";
 import "../../app/globals.css";
 
+interface Destination {
+  name: string;
+  subtitle: string;
+  description: string;
+  image: string;
+}
+
 interface Negara {
   nama: string;
   kode: string;
+  destinations: Destination[];
 }
 
 interface WorldMapSectionProps {
@@ -50,7 +58,7 @@ export default function WorldMapSection({ onNegaraSelect }: WorldMapSectionProps
               <div className="flex flex-col justify-start items-start">
                 {MapModel[continent].map((country) => (
                   <div
-                    key={country.id}
+                    key={country.kode} // Gunakan `country.kode` yang unik
                     className="text-[#352e2e] text-sm font-medium font-['GothamBook'] leading-[30px] cursor-pointer"
                     onClick={() => handleNegaraClick(country)}
                   >
